@@ -1,0 +1,67 @@
+.date-interval {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 32px auto;
+  padding-bottom: 34px;
+  border-bottom: $border-main;
+}
+
+.date-input {
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 340px;
+  border: $border-main;
+  border-radius: 4px;
+  display: flex;
+}
+
+.date-first {
+  padding: 5px 0 5px 15px;
+}
+
+.date-last {
+  padding: 5px 0 5px 15px;
+  border-left: $border-main;
+}
+
+.icon-calendar {
+  color: $color-dark-gray;
+  padding-right: 15px;
+}
+
+.data-table{
+  display: flex;
+  flex-wrap: wrap;
+  color: $color-dark-gray;
+}
+
+.first-column, .second-column {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.data-table span {
+  float: right;
+  color: $color-black;
+}
+
+.table-inner {
+  margin: 0 30px 0 30px;
+  font-weight: $font-regular;
+  font-size: 16px;
+  line-height: 35px;
+  padding-top: 10px;
+  border-bottom: $border-main;
+}
+
+.page-subtitle {
+  padding: 70px 0 30px 0;
+  color: $color-dark-gray;
+}
+
+.chart {
+  padding-bottom: 55px;
+  width: 100%;
+}

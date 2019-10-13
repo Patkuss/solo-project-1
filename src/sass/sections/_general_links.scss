@@ -1,0 +1,29 @@
+.links-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.general-links-table{
+    width:100%;
+    font-size: 16px;
+    color: $color-dark-gray;
+}
+
+.general-links-table:first-of-type{
+    border-top: $border-main;
+}
+
+.link-line{
+    border-bottom:$border-main;
+    padding: 22px 0;
+}
+
+.link-name {
+    font-weight: $font-medium;
+}
+
+.link-url {
+    text-decoration: none;
+    color: $color-link;
+}

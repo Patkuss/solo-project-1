@@ -1,0 +1,20 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.page-inner {
+  width: 100%;
+  margin: 81px 0 18px 190px;
+}
+
+section {
+  margin: 18px 18px 0 18px;
+  background-color: $color-light;
+  border: $border-main;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
