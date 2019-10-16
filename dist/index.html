@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="vendor/Glyphter.css" type="text/css"/>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
   </head>
-  <body class="dashboard">
+  <body class="dashboard" onload="checkScreenWidth()">
 		<header class="topbar">
 			<ul>
 				<li class="topbar-item">
@@ -40,8 +40,12 @@
 		</header>
 		<nav class="sidebar">
 			<div class="logo">
-				<a href="#"><img class="logo-img" src="images/logo.png" alt="logo"/></a>
-				<!--hamburger-->
+        <a href="#"><img class="logo-img" src="images/logo.png" alt="logo"/></a>
+        <a href="#" class="hamburger">
+          <div class="menu-hamburger"></div>
+          <div class="menu-hamburger"></div>
+          <div class="menu-hamburger"></div>
+        </a>
 			</div>
 			<ul class="menu">
 				<li>
@@ -111,13 +115,13 @@
           </div>
           <button class="btn btn-reset"><i class="icon-refresh"></i></button>
         </div>
-        <div class="container">
-          <div class="data-table">
-            <div class="first-column">
+        <div class="container data-table">
+          <div class="row">
+            <div class="col-md-6 col-sm-11">
               <div class="table-inner">Visit Signups<span>124</span></div>
               <div class="table-inner">FTD<span>445</span></div>
             </div>
-            <div class="second-column">
+            <div class="col-md-6 col-sm-11">
               <div class="table-inner">Net deposit<span>564</span></div>
               <div class="table-inner">Turn over<span>432</span></div>
             </div>
@@ -129,111 +133,96 @@
 			<section class="general-links">
 				<h1 class="page-title">LINKS</h1>
 				<div class="links-inner container">
-					<button class="btn btn-links">+ add new</button>
-            <table class="general-links-table">
-              <tbody>
-                <tr class="link-row">
-                  <td class="link-line"><span class="link-name">Home page</span></td>
-                  <td class="link-line">
-                    <a class="link-url" href="http://www.homepage.com">http://www.homepage.com</a>
-                  </td>
-                  <td class="link-line link-icons">
-                    <a class="link-icon" href="#"><i class="icon-links"></i></a>
-                    <a class="link-icon" href="#"><i class="icon-trash"></i></a>
-                  </td>
-                </tr>
-                <tr class="link-row">
-                  <td class="link-line"><span class="link-name">Currently offer</span></td>
-                  <td class="link-line">
-                    <a class="link-url" href="http://www.currently.com">http://www.currently.com</a>
-                  </td>
-                  <td class="link-line link-icons">
-                    <a class="link-icon" href="#"><i class="icon-links"></i></a>
-                    <a class="link-icon" href="#"><i class="icon-trash"></i></a>
-                  </td>
-                </tr>
-                <tr class="link-row">
-                  <td class="link-line"><span class="link-name">Blurpix</span></td>
-                  <td class="link-line">
-                    <a class="link-url" href="http://www.blurpix.com">http://www.blurpix.com</a>
-                  </td>
-                  <td class="link-line link-icons">
-                    <a class="link-icon" href="#"><i class="icon-links"></i></a>
-                    <a class="link-icon" href="#"><i class="icon-trash"></i></a>
-                  </td>
-                </tr>
-                <tr class="link-row">
-                  <td class="link-line"><span class="link-name">Your Site</span></td>
-                  <td class="link-line">
-                    <a class="link-url" href="http://www.yoursite.com">http://www.yoursite.com</a>
-                  </td>
-                  <td class="link-line link-icons">
-                    <a class="link-icon" href="#"><i class="icon-links"></i></a>
-                    <a class="link-icon" href="#"><i class="icon-trash"></i></a>
-                  </td>
-                </tr>
-                <tr class="link-row">
-                  <td class="link-line"><span class="link-name">Google</span></td>
-                  <td class="link-line">
-                    <a class="link-url" href="http://www.google.com">http://www.google.com</a>
-                  </td>
-                  <td class="link-line link-icons">
-                    <a class="link-icon" href="#"><i class="icon-links"></i></a>
-                    <a class="link-icon" href="#"><i class="icon-trash"></i></a>
-                  </td>
-                </tr>
-                <tr class="link-row">
-                  <td class="link-line"><span class="link-name">Facebook</span></td>
-                  <td class="link-line">
-                    <a class="link-url" href="http://www.facebook.com">http://www.facebook.com</a>
-                  </td>
-                  <td class="link-line link-icons">
-                    <a class="link-icon" href="#"><i class="icon-links"></i></a>
-                    <a class="link-icon" href="#"><i class="icon-trash"></i></a>
-                  </td>
-                </tr>
-                <tr class="link-row">
-                  <td class="link-line"><span class="link-name">Dashboard</span></td>
-                  <td class="link-line">
-                    <a class="link-url" href="http://www.dashboard.com">http://www.dashboard.com</a>
-                  </td>
-                  <td class="link-line link-icons">
-                    <a class="link-icon" href="#"><i class="icon-links"></i></a>
-                    <a class="link-icon" href="#"><i class="icon-trash"></i></a>
-                  </td>
-                </tr>
-                <tr class="link-row">
-                  <td class="link-line"><span class="link-name">Blurax</span></td>
-                  <td class="link-line">
-                    <a class="link-url" href="http://www.blurax.com">http://www.blurax.com</a>
-                  </td>
-                  <td class="link-line link-icons">
-                    <a class="link-icon" href="#"><i class="icon-links"></i></a>
-                    <a class="link-icon" href="#"><i class="icon-trash"></i></a>
-                  </td>
-                </tr>
-                <tr class="link-row">
-                  <td class="link-line"><span class="link-name">Piece of Wine</span></td>
-                  <td class="link-line">
-                    <a class="link-url" href="http://www.pieceofwine.com">http://www.pieceofwine.com</a>
-                  </td>
-                  <td class="link-line link-icons">
-                    <a class="link-icon" href="#"><i class="icon-links"></i></a>
-                    <a class="link-icon" href="#"><i class="icon-trash"></i></a>
-                </tr>
-                <tr class="link-row">
-                  <td class="link-line"><span class="link-name">Twitter</span></td>
-                  <td class="link-line">
-                    <a class="link-url" href="http://www.twitter.com">http://www.twitter.com</a>
-                  </td>
-                  <td class="link-line link-icons">
-                    <a class="link-icon" href="#"><i class="icon-links"></i></a>
-                    <a class="link-icon" href="#"><i class="icon-trash"></i></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-					<button class="btn btn-links">+ add new</button>
+          <div class="center-button">
+            <button class="btn btn-links">+ add new</button>
+          </div>
+          <div class="scroll-wrapper">
+            <div class="general-links-table">
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Home page</div>
+                  <div class="col-6 general-link"><a href="#">http://www.homepage.com</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Currently offer</div>
+                  <div class="col-6 general-link"><a href="#">http://www.currently.com</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Blurpix</div>
+                  <div class="col-6 general-link"><a href="#">http://www.blupix.com</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Your Site</div>
+                  <div class="col-6 general-link"><a href="#">http://www.yoursite.com</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Google</div>
+                  <div class="col-6 general-link"><a href="#">http://www.google.com</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Facebook</div>
+                  <div class="col-6 general-link"><a href="#">http://www.facebook.com</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Dashboard</div>
+                  <div class="col-6 general-link"><a href="#">http://www.dashboard.com</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Blurax</div>
+                  <div class="col-6 general-link"><a href="#">http://www.blurax.com</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Piece of Wine</div>
+                  <div class="col-6 general-link"><a href="#">http://www.pieceofwine.com</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Twitter</div>
+                  <div class="col-6 general-link"><a href="#">http://www.twitter.com</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="center-button">
+            <button class="btn btn-links">+ add new</button>
+          </div>
 				</div>
 			</section>
 		</div>

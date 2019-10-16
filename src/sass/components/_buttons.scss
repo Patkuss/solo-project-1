@@ -9,9 +9,14 @@
   justify-content: center;
   border: none;
   background: $color-light;
-  padding: 19px 15px;
+  padding: 18px 15px;
   cursor: pointer;
   color: $color-dark-gray;
+  transition: $transition;
+
+  &:hover{
+    background-color: $color-background;
+  }
 }
 
 .btn-reset {
@@ -25,6 +30,10 @@
   border: none;
   cursor: pointer;
   transition: $transition;
+
+  &:hover{
+    background-color: $color-orange-hover;
+  }
 }
 
 .btn-links {
@@ -38,4 +47,12 @@
   border: none;
   cursor: pointer;
   transition: $transition;
+
+  &:hover{
+    background-color: $color-orange-hover;
+  }
+}
+
+.center-button {
+  text-align: center;
 }

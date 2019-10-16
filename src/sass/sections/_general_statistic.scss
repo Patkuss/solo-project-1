@@ -32,23 +32,16 @@
 }
 
 .data-table{
-  display: flex;
-  flex-wrap: wrap;
   color: $color-dark-gray;
 }
 
-.first-column, .second-column {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.data-table span {
+.table-inner span {
   float: right;
   color: $color-black;
 }
 
 .table-inner {
-  margin: 0 30px 0 30px;
+  margin: 0 50px;
   font-weight: $font-regular;
   font-size: 16px;
   line-height: 35px;
@@ -57,11 +50,34 @@
 }
 
 .page-subtitle {
-  padding: 70px 0 30px 0;
+  padding: 70px 0 30px 20px;
   color: $color-dark-gray;
 }
 
 .chart {
   padding-bottom: 55px;
   width: 100%;
+}
+
+@media (max-width: 625px) {
+  .date-interval {
+    flex-direction: column;
+  }
+  .date-input {
+    width: 220px;
+  }
+  .btn-reset {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 532px) {
+  .table-inner{
+    min-width: 151px;
+    margin: 0 auto;
+  }
+
+  .page-subtitle {
+    padding-top: 35px;
+  }
 }

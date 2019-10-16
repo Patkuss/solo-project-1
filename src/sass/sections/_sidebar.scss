@@ -3,7 +3,6 @@
   position: fixed;
   width: 190px;
   height: 100%;
-  display: flex;
   flex-direction: column;
   top: 0;
   right: auto;
@@ -12,15 +11,67 @@
   transition: $transition;
 }
 
+.sidebar.show {
+  width: 60px;
+  transition: $transition;
+}
+
+.show .logo-img,
+.show .menu-page,
+.show .menagment-title,
+.show .manager {
+  display: none;
+}
+
+.show .hamburger {
+  float: left;
+}
+
+.show .menagment {
+  padding: 10px 0 0 10px;
+}
+
+.show .menu {
+  margin-top: 35px;
+}
+
+.show .manager-dot {
+  top: 1px;
+  right: 1px;
+}
+
 .logo {
   padding: 15px 0 0 20px;
+  width: 100%;
+  justify-content: space-between;
+  transition: $transition;
 }
+
+.hamburger {
+  float: right;
+  display: block;
+  transition: $transition;
+  padding-right: 18px;
+}
+
+.hamburger:hover .menu-hamburger {
+  background-color: $color-light;
+}
+
+.menu-hamburger {
+  width: 18px;
+  height: 2px;
+  background-color: $color-dark-gray;
+  margin: 6px 0;
+}
+
 
 .menu {
   list-style-type: none;
   padding: 0;
   margin-bottom: 20px;
   margin-top: 5px;
+  transition: $transition;
 }
 
 .menu-link {
@@ -30,6 +81,7 @@
   padding-left: 19px;
   font-weight: $font-regular;
   cursor: pointer;
+  transition: $transition;
 }
 
 .menu i {
@@ -45,6 +97,7 @@
 
 .menu-page {
   padding-left: 11px;
+  transition: $transition;
 }
 
 .menagment {
@@ -67,12 +120,75 @@
   margin: 0;
 }
 
+.managers {
+  position: relative;
+}
+
 .manager-dot {
   width: 11px;
   height: 11px;
   border-radius: 50%;
   background: $color-green;
-  top: 40%;
-  right: 68%;
+  top: 1px;
+  left: 32px;
   position: absolute;
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 60px;
+    transition: $transition;
+  }
+
+  .logo-img,
+  .menu-page,
+  .menagment-title,
+  .manager {
+    display: none;
+  }
+
+  .hamburger {
+    float: left;
+  }
+
+  .menagment {
+    padding: 10px 0 0 10px;
+  }
+
+  .menu {
+    margin-top: 35px;
+  }
+
+  .manager-dot {
+    top: 1px;
+    right: 1px;
+  }
+
+  .sidebar.show {
+    width: 190px;
+    transition: $transition;
+  }
+
+  .show .logo-img,
+  .show .menu-page,
+  .show .menagment-title,
+  .show .manager {
+    display: inline-block;
+  }
+
+  .show .hamburger {
+    float: right;
+  }
+
+  .show .menagment {
+    padding: 0 0 0 19px;
+  }
+
+  .show .menu {
+    margin-top: 5px;
+  }
+
+  .show .manager-dot {
+    left: 32px;
+  }
 }
