@@ -54,18 +54,19 @@
   color: $color-dark-gray;
 }
 
-.chart {
-  padding-bottom: 55px;
-  width: 100%;
+canvas {
+  margin-bottom: 24px;
 }
 
 @media (max-width: 625px) {
   .date-interval {
     flex-direction: column;
   }
+
   .date-input {
     width: 220px;
   }
+
   .btn-reset {
     margin-top: 30px;
   }

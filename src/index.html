@@ -49,7 +49,7 @@
 			</div>
 			<ul class="menu">
 				<li>
-					<a href="#general" class="menu-link">
+					<a href="#general-statistic" class="menu-link">
             <i class="icon-general"></i>
 						<span class="menu-page">General</span>
 					</a>
@@ -127,7 +127,7 @@
             </div>
           </div>
           <h2 class="page-subtitle">Earnings chart</h2>
-          <img class="chart" src="images/chart.png" alt="chart"/>
+          <canvas id="myChart"></canvas>
         </div>
       </section>
 			<section class="general-links">
@@ -225,7 +225,8 @@
           </div>
 				</div>
 			</section>
-		</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 		<script src="js/script.js"></script>
   </body>
 </html>

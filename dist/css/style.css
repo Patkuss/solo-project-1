@@ -1148,9 +1148,8 @@ section {
   color: #818181;
 }
 
-.chart {
-  padding-bottom: 55px;
-  width: 100%;
+canvas {
+  margin-bottom: 24px;
 }
 
 @media (max-width: 625px) {
