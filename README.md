@@ -1,1 +1,1 @@
-# solo-project-1
+https://patkuss.github.io/solo-project-1/
