@@ -4,8 +4,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-	<title>solo_project_1</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+	  <title>solo_project_1</title>
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="vendor/Glyphter.css" type="text/css"/>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
   </head>
@@ -26,13 +26,13 @@
 					</button>
 				</li>
 				<li class="topbar-item">
-					<button class="btn btn-topbar">
+					<button class="btn btn-topbar" id="loginModal">
 						<i class="icon-profile"></i>
 						<span class="topbar-user">Leonardo Dicaprio</span>
 					</button>
 				</li>
 				<li class="topbar-item">
-					<button class="btn btn-topbar">
+					<button class="btn btn-topbar" id="quitModal">
 						<i class="icon-quit"></i>
 					</button>
 				</li>
@@ -49,7 +49,7 @@
 			</div>
 			<ul class="menu">
 				<li>
-					<a href="#general-statistic" class="menu-link">
+					<a href="#general-statistic" class="menu-link active">
             <i class="icon-general"></i>
 						<span class="menu-page">General</span>
 					</a>
@@ -96,7 +96,7 @@
 					<p>YOUR MANAGER</p>
 				</div>
 				<div class="managers">
-					<a href="#">
+					<a href="#" id="chatModal">
             <img src="images/mikhael.png" alt="MikhaelE"/>
             <i class="manager-dot active"></i>
 						<p class="manager">Mikhael E.</p>
@@ -105,9 +105,9 @@
 			</div>
 		</nav>
 		<div class="page-inner">
-			<section class="general-statistic">
-				<h1 class="page-title">GENERAL STATISTIC</h1>
-				<div class="date-interval">
+      <section class="general-statistic page" id="general-statistic-section">
+        <h1 class="page-title">GENERAL STATISTIC</h1>
+        <div class="date-interval">
           <div class="date-input">
             <div class="date-first">16.05.2016</div>
             <div class="date-last">16.05.2016</div>
@@ -130,18 +130,18 @@
           <canvas id="myChart"></canvas>
         </div>
       </section>
-			<section class="general-links">
-				<h1 class="page-title">LINKS</h1>
-				<div class="links-inner container">
+      <section class="general-links page" id="links-section">
+        <h1 class="page-title">LINKS</h1>
+        <div class="links-inner container">
           <div class="center-button">
-            <button class="btn btn-links">+ add new</button>
+            <button class="btn btn-orange">+ add new</button>
           </div>
           <div class="scroll-wrapper">
-            <div class="general-links-table">
+            <div class="links-table">
               <div class="link-row">
                 <div class="row">
                   <div class="col-4 link-name">Home page</div>
-                  <div class="col-6 general-link"><a href="#">http://www.homepage.com</a></div>
+                  <div class="col-6 link-address"><a href="#">http://www.homepage.com</a></div>
                   <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
                   <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
                 </div>
@@ -149,7 +149,7 @@
               <div class="link-row">
                 <div class="row">
                   <div class="col-4 link-name">Currently offer</div>
-                  <div class="col-6 general-link"><a href="#">http://www.currently.com</a></div>
+                  <div class="col-6 link-address"><a href="#">http://www.currently.com</a></div>
                   <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
                   <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
                 </div>
@@ -157,7 +157,7 @@
               <div class="link-row">
                 <div class="row">
                   <div class="col-4 link-name">Blurpix</div>
-                  <div class="col-6 general-link"><a href="#">http://www.blupix.com</a></div>
+                  <div class="col-6 link-address"><a href="#">http://www.blupix.com</a></div>
                   <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
                   <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
                 </div>
@@ -165,7 +165,7 @@
               <div class="link-row">
                 <div class="row">
                   <div class="col-4 link-name">Your Site</div>
-                  <div class="col-6 general-link"><a href="#">http://www.yoursite.com</a></div>
+                  <div class="col-6 link-address"><a href="#">http://www.yoursite.com</a></div>
                   <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
                   <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
                 </div>
@@ -173,7 +173,7 @@
               <div class="link-row">
                 <div class="row">
                   <div class="col-4 link-name">Google</div>
-                  <div class="col-6 general-link"><a href="#">http://www.google.com</a></div>
+                  <div class="col-6 link-address"><a href="#">http://www.google.com</a></div>
                   <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
                   <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
                 </div>
@@ -181,7 +181,7 @@
               <div class="link-row">
                 <div class="row">
                   <div class="col-4 link-name">Facebook</div>
-                  <div class="col-6 general-link"><a href="#">http://www.facebook.com</a></div>
+                  <div class="col-6 link-address"><a href="#">http://www.facebook.com</a></div>
                   <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
                   <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
                 </div>
@@ -189,7 +189,7 @@
               <div class="link-row">
                 <div class="row">
                   <div class="col-4 link-name">Dashboard</div>
-                  <div class="col-6 general-link"><a href="#">http://www.dashboard.com</a></div>
+                  <div class="col-6 link-address"><a href="#">http://www.dashboard.com</a></div>
                   <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
                   <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
                 </div>
@@ -197,7 +197,7 @@
               <div class="link-row">
                 <div class="row">
                   <div class="col-4 link-name">Blurax</div>
-                  <div class="col-6 general-link"><a href="#">http://www.blurax.com</a></div>
+                  <div class="col-6 link-address"><a href="#">http://www.blurax.com</a></div>
                   <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
                   <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
                 </div>
@@ -205,7 +205,7 @@
               <div class="link-row">
                 <div class="row">
                   <div class="col-4 link-name">Piece of Wine</div>
-                  <div class="col-6 general-link"><a href="#">http://www.pieceofwine.com</a></div>
+                  <div class="col-6 link-address"><a href="#">http://www.pieceofwine.com</a></div>
                   <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
                   <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
                 </div>
@@ -213,7 +213,7 @@
               <div class="link-row">
                 <div class="row">
                   <div class="col-4 link-name">Twitter</div>
-                  <div class="col-6 general-link"><a href="#">http://www.twitter.com</a></div>
+                  <div class="col-6 link-address"><a href="#">http://www.twitter.com</a></div>
                   <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
                   <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
                 </div>
@@ -221,10 +221,90 @@
             </div>
           </div>
           <div class="center-button">
-            <button class="btn btn-links">+ add new</button>
+            <button class="btn btn-orange">+ add new</button>
+          </div>
+        </div>
+      </section>
+      <section class="banners page hidden" id="banners-section">
+				<h1 class="page-title">BANNERS</h1>
+				<div class="links-inner container">
+          <div class="center-button">
+            <button class="btn btn-orange">+ add new</button>
+          </div>
+          <div class="scroll-wrapper">
+            <div class="links-table">
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Banner main</div>
+                  <div class="col-6 link-address"><a href="#">http://www.website.com/bannermain.gif</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Sign up banner</div>
+                  <div class="col-6 link-address"><a href="#">http://www.website.com/signup.gif</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Banner left side</div>
+                  <div class="col-6 link-address"><a href="#">http://www.website.com/leftside.gif</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Vertical banner</div>
+                  <div class="col-6 link-address"><a href="#">http://www.website.com/vert.gif</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Front banner</div>
+                  <div class="col-6 link-address"><a href="#">http://www.website.com/front.gif</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="row">
+                  <div class="col-4 link-name">Horizontal banner</div>
+                  <div class="col-6 link-address"><a href="#">http://www.website.com/herizontal.gif</a></div>
+                  <div class="col-1"><a href="#"><i class="icon-links"></i></a></div>
+                  <div class="col-1"><a href="#"><i class="icon-trash"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="center-button">
+            <button class="btn btn-orange">+ add new</button>
           </div>
 				</div>
 			</section>
+    </div>
+    <div class="overlay" id="overlay">
+      <div class="modal" id="login-modal">
+        <h2 class="page-title">LOGIN</h2>
+        <div class="row">
+          <input id="login" class="login-input" type="text" placeholder="login name">
+          <input id="password" class="login-input" type="password" placeholder="password">
+          <button class="btn btn-orange btn-enter js--close-modal">Enter</button>
+        </div>
+      </div>
+      <div class="modal" id="quit-modal">
+        <h2 class="page-title">Do you really want to Quit?</h2>
+        <div class="row">
+          <button class="btn btn-orange btn-cancel js--close-modal">Cancel</button>
+          <button class="btn btn-orange btn-quit">Quit</button>
+        </div>
+      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 		<script src="js/script.js"></script>

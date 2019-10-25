@@ -82,6 +82,7 @@
   font-weight: $font-regular;
   cursor: pointer;
   transition: $transition;
+  text-decoration: none;
 }
 
 .menu i {
@@ -89,6 +90,13 @@
 }
 
 .menu-link:hover {
+  border-left: $color-orange 4px solid;
+  padding-left: 15px;
+  color: $color-light;
+  background-color: $color-dark;
+}
+
+.menu-link.active {
   border-left: $color-orange 4px solid;
   padding-left: 15px;
   color: $color-light;

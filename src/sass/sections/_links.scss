@@ -1,5 +1,4 @@
-
-.general-links-table{
+.links-table{
   width: 100%;
   font-size: 16px;
   color: $color-dark-gray;
@@ -26,7 +25,7 @@
   color: inherit;
 }
 
-.general-link {
+.link-address {
   color: $color-link;
 }
 
@@ -45,7 +44,7 @@
 
 .link-row .icon-links:hover,
 .link-row .icon-trash:hover,
-.link-row .general-link a:hover {
+.link-row .link-address a:hover {
   color: $color-orange;
 }
 
@@ -56,11 +55,11 @@
   width: 100%;
 }
 
-.scroll-wrapper .general-links-table {
+.scroll-wrapper .links-table {
   width: 100%;
   max-width: 100%;
 }
 
 .link-row>.row {
-  min-width: 425px;
+  min-width: 570px;
 }

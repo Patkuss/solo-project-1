@@ -17,6 +17,10 @@ section {
   border: $border-main;
 }
 
+.hidden {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
