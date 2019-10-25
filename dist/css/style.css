@@ -1150,6 +1150,7 @@ section {
 .page-subtitle {
   padding: 70px 0 30px 20px;
   color: #818181;
+  font-size: 18px;
 }
 
 canvas {

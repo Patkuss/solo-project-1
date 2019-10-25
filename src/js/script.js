@@ -120,10 +120,6 @@ document.getElementById('loginModal').addEventListener('click', function() {
   openModal('#login-modal');
 });
 
-document.getElementById('chatModal').addEventListener('click', function() {
-  openModal('#chat-modal');
-});
-
 document.getElementById('quitModal').addEventListener('click', function() {
   openModal('#quit-modal');
 });

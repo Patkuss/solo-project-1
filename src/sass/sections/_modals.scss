@@ -44,27 +44,27 @@
 // login
 
 .login-input {
-    line-height: 42px;
-    width: 250px;
-    height: 40px;
-    margin: 30px 0 0 14px;
-    font-size: 16px;
-    padding-left: 40px;
-    border: $border-main;
-    border-radius: 3px;
-    color: $color-dark-gray;
+  line-height: 42px;
+  width: 250px;
+  height: 40px;
+  margin: 30px 0 0 14px;
+  font-size: 16px;
+  padding-left: 40px;
+  border: $border-main;
+  border-radius: 3px;
+  color: $color-dark-gray;
 }
 
 .btn-enter {
-    margin: 30px 14px 0 14px;
+  margin: 30px 14px 0 14px;
 }
 
 // quit
 
 .btn-cancel {
-    background-color:gray;
+  background-color: gray;
 }
 
 .btn-cancel, .btn-quit {
-    margin: 30px 14px 0 14px;
+  margin: 30px 14px 0 14px;
 }
